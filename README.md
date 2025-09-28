@@ -1,15 +1,19 @@
-AISE26 — W5D2 In-Class Material
+# AISE26 — W5D2 In-Class Material
+**Domain-Driven Design + Hexagonal (Ports & Adapters) — FastAPI**
 
-Domain-Driven Design + Hexagonal (Ports & Adapters) — FastAPI
+This repo demonstrates clean boundaries with **domain / application / infrastructure** layers and a **FastAPI** HTTP adapter, plus unit tests for core logic.
 
-Prerequisites:
-Python 3.10+ (3.11 recommended)
-pip (bundled with Python)
-(Optional) Git and VS Code
+---
 
-Quickstart — Mac/Linux (bash/zsh)
+## Prerequisites
+- **Python** 3.10+ (3.11 recommended)
+- **pip** (bundled with Python)
+- **Git** and (Optional) **VS Code**
 
-# 1) (Optional) open project folder
+
+## Quickstart — Mac/Linux (bash/zsh)
+
+# 1) Go to the project folder
 cd /path/to/AISE26-W5D2-inclassmaterial
 
 # 2) Create & activate virtual environment
@@ -24,9 +28,11 @@ pytest -q
 
 # 5) Start the API (FastAPI + Uvicorn)
 uvicorn app:app --reload
-# → http://127.0.0.1:8000/docs  (Swagger UI)
-Quickstart — Windows (PowerShell)
-# 1) Go to the project
+# → Open http://127.0.0.1:8000/docs (Swagger UI)
+
+## Quickstart — Windows (PowerShell)
+
+# 1) Go to the project folder
 cd C:\path\to\AISE26-W5D2-inclassmaterial
 
 # 2) Create & activate virtual environment
@@ -41,10 +47,9 @@ pytest -q
 
 # 5) Start the API
 uvicorn app:app --reload
-# → http://127.0.0.1:8000/docs
+# → Open http://127.0.0.1:8000/docs
 
-
-Windows (Command Prompt alternative):
+## Windows (Command Prompt alternative)
 
 cd C:\path\to\AISE26-W5D2-inclassmaterial
 python -m venv .venv
@@ -53,5 +58,9 @@ pip install -r requirements.txt
 pytest -q
 uvicorn app:app --reload
 
-If uvicorn isn’t recognized on Windows/Mac, run:
+If uvicorn isn’t recognized, use:
 python -m uvicorn app:app --reload
+
+## Deactivate the virtual environment
+Mac/Linux: deactivate
+Windows (PowerShell/CMD): deactivate
